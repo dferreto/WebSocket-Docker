@@ -258,5 +258,7 @@ class WebsocketServer:
             conn, addr = self.socket.accept()
             print('Conectado desde {0}'.format(addr))
             print(conn)
+            self.active_connections += 1
+            print(f'Conexiones activas: {self.active_connections}')
             ws = self.ws_cls(conn)
             ws.start()

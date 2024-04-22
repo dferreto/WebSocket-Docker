@@ -93,10 +93,6 @@ docker ps
 
 	-- Upload proyect to Docker Hub
 		docker push dferreto/socket_01
-
-	-- push proyect to Docker Hub Desktop
-
-		docker push dferreto/socket_01
 	 
 	-- Create container with image
 		docker run --name socket_01 -p 5001:5001 -d dferreto/socket_01
