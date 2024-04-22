@@ -84,21 +84,21 @@ docker ps
 			- Password:
 		
 	-- Create image 
-		docker build -t dangeliza/socket_01:v2 .	
+		docker build -t dferreto/socket_01:v2 .	
 
 
 	-- Create proyect tag to use in Docker Hub
-		docker tag dangeliza/socket_01:v2 dangeliza/socket_01
+		docker tag dferreto/socket_01:v2 dferreto/socket_01
 
 
 	-- Upload proyect to Docker Hub
-		docker push dangeliza/socket_01
+		docker push dferreto/socket_01
 
 	-- push proyect to Docker Hub Desktop
 
 		docker push dferreto/socket_01
 	 
 	-- Create container with image
-		docker run --name socket_01 -p 5001:5001 -d dangeliza/socket_01
+		docker run --name socket_01 -p 5001:5001 -d dferreto/socket_01
 
 ```	
