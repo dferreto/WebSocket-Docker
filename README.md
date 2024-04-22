@@ -40,7 +40,7 @@
 2. Add the following content to the Dockerfile:
 ```bash
 FROM python:3.11.9-alpine3.19
-LABEL authors="jruiz"
+LABEL authors="dferreto"
 
 # Set the working directory in the container
 WORKDIR /apps/socket_01
